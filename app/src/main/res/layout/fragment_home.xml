@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginTop="16dp"
+         android:id="@+id/textInputLayoutUsername">
+
+        <com.google.android.material.textfield.TextInputEditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="Username"
+             android:id="@+id/editTextUsername" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/textInputLayoutUsername"
+         android:layout_marginTop="16dp"
+         android:id="@+id/textInputLayoutPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="Password"
+             android:inputType="textPassword"
+             android:id="@+id/editTextPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/textInputLayoutPassword"
+         android:layout_marginTop="24dp"
+         android:id="@+id/buttonLogin"
+         android:text="Login" />
+    
+    <com.google.android.material.button.MaterialButton
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/buttonLogin"
+         android:layout_marginTop="24dp"
+         android:id="@+id/buttonTest"
+         android:text="DoReload" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtDebug"
+         android:layout_below="@id/buttonTest"
+         android:layout_height="match_parent"
+        
+        android:scrollbars = "vertical"
+         android:layout_width="wrap_content" />
+
+</RelativeLayout>
